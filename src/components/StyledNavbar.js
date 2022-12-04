@@ -6,25 +6,19 @@ const Navbar = () => {
     <div className="navbar">
       <NavLink
         to={"/"}
-        style={({ isActive }) => {
-          return { color: isActive ? "blue" : "black" };
-        }}
+        className={({ isActive }) => (isActive ? "link active" : "link")}
       >
         Home
       </NavLink>
       <NavLink
         to={"/about"}
-        style={({ isActive }) => {
-          return { color: isActive ? "blue" : "black" };
-        }}
+        className={({ isActive }) => (isActive ? "link active" : "link")}
       >
         About
       </NavLink>
       <NavLink
         to={"/products"}
-        style={({ isActive }) => {
-          return { color: isActive ? "blue" : "black" };
-        }}
+        className={({ isActive }) => (isActive ? "link active" : "link")}
       >
         Products
       </NavLink>
